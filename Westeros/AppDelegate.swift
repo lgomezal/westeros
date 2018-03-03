@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let lastSelectedSeason = seasonListViewController.lastSelectedSeason()
         let seasonDetailViewController = SeasonDetailViewController(model: lastSelectedSeason)
         
-        // Creamos el TABBARVIEWCONTROLLER
+        // Creamos el tabbarviewcontroller
         let tabBarViewController = UITabBarController()
         seasonListViewController.tabBarItem = UITabBarItem(title: "Seasons", image: nil, tag: 0)
         houseListViewController.tabBarItem = UITabBarItem(title: "Houses", image: nil, tag: 1)
@@ -56,6 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Asignamos el rootVC
             window?.rootViewController = tabBarViewController.wrappedInNavigation()
         }
+        
+        // Customizamos colores de aplicación
+        UITabBar.appearance().tintColor = UIColor.black
+        tabBarViewController.tabBar.items![0].image  = UIImage(named: "home30")
+        tabBarViewController.tabBar.items![1].image  = UIImage(named: "folder30")
         
         return true
     }

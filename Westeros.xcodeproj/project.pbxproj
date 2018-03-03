@@ -16,6 +16,8 @@
 		BA16FACB20337C97005E7656 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16FACA20337C97005E7656 /* UIViewController+Additions.swift */; };
 		BA16FACD2033808E005E7656 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16FACC2033808E005E7656 /* RepositoryTest.swift */; };
 		BA16FACF20338172005E7656 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16FACE20338172005E7656 /* Repository.swift */; };
+		BA51779B204AB9410023D42A /* folder30.png in Resources */ = {isa = PBXBuildFile; fileRef = BA517799204AB9400023D42A /* folder30.png */; };
+		BA51779C204AB9410023D42A /* home30.png in Resources */ = {isa = PBXBuildFile; fileRef = BA51779A204AB9410023D42A /* home30.png */; };
 		BA727C8520362B8D0023AEB2 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA727C8320362B8D0023AEB2 /* WikiViewController.swift */; };
 		BA727C8620362B8D0023AEB2 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA727C8420362B8D0023AEB2 /* WikiViewController.xib */; };
 		BA727C89203644F80023AEB2 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA727C87203644F80023AEB2 /* HouseListViewController.swift */; };
@@ -92,6 +94,8 @@
 		BA16FACA20337C97005E7656 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		BA16FACC2033808E005E7656 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
 		BA16FACE20338172005E7656 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BA517799204AB9400023D42A /* folder30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder30.png; sourceTree = "<group>"; };
+		BA51779A204AB9410023D42A /* home30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home30.png; sourceTree = "<group>"; };
 		BA727C8320362B8D0023AEB2 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		BA727C8420362B8D0023AEB2 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		BA727C87203644F80023AEB2 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
@@ -258,6 +262,8 @@
 				BAEA29B120488D1D000E01FE /* 6x2.jpg */,
 				BAEA29B620488D1E000E01FE /* 7x1.jpg */,
 				BAEA29B220488D1D000E01FE /* 7x2.jpg */,
+				BA517799204AB9400023D42A /* folder30.png */,
+				BA51779A204AB9410023D42A /* home30.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				BAEA29BC20488D1F000E01FE /* 4x2.jpg in Resources */,
 				BAEA29A6204889E6000E01FE /* S02.png in Resources */,
 				BABC6AF5202CE4B000E40B48 /* LaunchScreen.storyboard in Resources */,
+				BA51779B204AB9410023D42A /* folder30.png in Resources */,
 				BA727C8620362B8D0023AEB2 /* WikiViewController.xib in Resources */,
 				BAEA29C020488D1F000E01FE /* 7x2.jpg in Resources */,
 				BAEA29BA20488D1F000E01FE /* 3x2.jpg in Resources */,
@@ -424,6 +431,7 @@
 				BAEA299C2048863E000E01FE /* Daenerys-Targaryen.png in Resources */,
 				BAEA29C620488D1F000E01FE /* 1x1.jpg in Resources */,
 				BAFCB335203238740093C2E7 /* codeIsComing.png in Resources */,
+				BA51779C204AB9410023D42A /* home30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
