@@ -36,16 +36,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarViewController = UITabBarController()
         seasonListViewController.tabBarItem = UITabBarItem(title: "Seasons", image: nil, tag: 0)
         houseListViewController.tabBarItem = UITabBarItem(title: "Houses", image: nil, tag: 1)
-        tabBarViewController.viewControllers = [houseListViewController, seasonListViewController]
-        
-        // Asignamos delegados
-        houseListViewController.delegate = houseDetailViewController
-        seasonListViewController.delegate = seasonDetailViewController as? SeasonListViewControllerDelegate
-
-        tabBarViewController.delegate = houseDetailViewController
+        tabBarViewController.viewControllers = [houseListViewController.wrappedInNavigation(), seasonListViewController.wrappedInNavigation()]
         
         // Si es iPad creamos el split
         if UIDevice.current.userInterfaceIdiom == .pad {
+            // Asignamos delegados
+            houseListViewController.delegate = houseDetailViewController
+            seasonListViewController.delegate = seasonDetailViewController as? SeasonListViewControllerDelegate
+            tabBarViewController.delegate = houseDetailViewController
             // Crear el UISplitVC y le asignamos los viewcontrollers (master y detail)
             let splitViewController = UISplitViewController()
             splitViewController.viewControllers = [tabBarViewController.wrappedInNavigation(), houseDetailViewController.wrappedInNavigation(),
@@ -53,8 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Asignamos el rootVC
             window?.rootViewController = splitViewController
         } else {
+            // Asignamos delegados
+            houseListViewController.delegate = self as? HouseListViewControllerDelegate
             // Asignamos el rootVC
-            window?.rootViewController = tabBarViewController.wrappedInNavigation()
+           window?.rootViewController = tabBarViewController
         }
         
         // Customizamos colores de aplicación

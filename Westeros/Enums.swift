@@ -43,8 +43,8 @@ enum Persons: String {
 
 enum Alias: String {
     case RobbAlias = "El joven lobo"
-    case JaimeAlias = "El Enano"
-    case TyrionAlias = "El Matareyes"
+    case JaimeAlias = "El Matareyes"
+    case TyrionAlias = "El Enano"
     case DaenerysAlias = "La madre de dragones"
 }
 
