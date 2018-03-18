@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if UIDevice.current.userInterfaceIdiom == .pad {
             // Asignamos delegados
             houseListViewController.delegate = houseDetailViewController
-            seasonListViewController.delegate = seasonDetailViewController as? SeasonListViewControllerDelegate
+            seasonListViewController.delegate = seasonDetailViewController
             tabBarViewController.delegate = houseDetailViewController
             // Crear el UISplitVC y le asignamos los viewcontrollers (master y detail)
             let splitViewController = UISplitViewController()
@@ -52,7 +52,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = splitViewController
         } else {
             // Asignamos delegados
-            houseListViewController.delegate = self as? HouseListViewControllerDelegate
+            houseListViewController.delegate = houseListViewController
+            seasonListViewController.delegate = seasonListViewController
             // Asignamos el rootVC
            window?.rootViewController = tabBarViewController
         }

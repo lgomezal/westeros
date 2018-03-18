@@ -50,8 +50,12 @@ extension Season {
         return "\(name) \(releaseDate)"
     }
     
-    var proxyForComparison: String {
-        return name.uppercased()
+    //var proxyForComparison: String {
+    //    return name.uppercased()
+    //}
+    
+    var proxyForComparison: Date {
+        return releaseDate
     }
 }
 

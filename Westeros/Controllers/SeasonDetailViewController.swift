@@ -29,11 +29,8 @@ class SeasonDetailViewController: UIViewController {
     }
     
     // MARK: - Life Cycle
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // Nos damos de alta en las notificaciones
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(seasonDidChange), name: Notification.Name(SEASON_DID_CHANGE_NOTIFICATION_NAME), object: nil)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         setupUI()
         syncModelWithView()
     }
@@ -93,6 +90,13 @@ class SeasonDetailViewController: UIViewController {
         //Actualizar el modelo
         guard let model = season else { return }
         self.model = model
+        syncModelWithView()
+    }
+}
+
+extension SeasonDetailViewController: SeasonListViewControllerDelegate {
+    func SeasonListViewController(_ vc: SeasonListViewController, didSelectSeason season: Season) {
+        model = season
         syncModelWithView()
     }
 }

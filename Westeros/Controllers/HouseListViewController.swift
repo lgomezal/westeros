@@ -95,14 +95,21 @@ class HouseListViewController: UITableViewController {
         saveLastSelectedHouse(at: indexPath.row)
         
         // Si es iPhone hacemos push
-        if UIDevice.current.userInterfaceIdiom == .pad {
+        /*if UIDevice.current.userInterfaceIdiom == .pad {
             return
         } else {
             // Crear un controlador de detalle de esa persona
             let houseDetailViewController = HouseDetailViewController(model: house)
             // Hacer un push
             navigationController?.pushViewController(houseDetailViewController, animated: true)
-        }
+        }*/
+    }
+}
+
+extension HouseListViewController: HouseListViewControllerDelegate {
+    func HouseListViewController(_ vc: HouseListViewController, didSelectHouse house: House) {
+        let houseDetailViewController = HouseDetailViewController(model: house)
+        navigationController?.pushViewController(houseDetailViewController, animated: true)
     }
 }
 

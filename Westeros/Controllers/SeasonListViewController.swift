@@ -95,14 +95,21 @@ class SeasonListViewController: UITableViewController {
         saveLastSelectedSeason(at: indexPath.row)
         
         // Si es iPhone hacemos push
-        if UIDevice.current.userInterfaceIdiom == .pad {
+        /*if UIDevice.current.userInterfaceIdiom == .pad {
             return
         } else {
             // Crear un controlador de detalle de esa persona
             let seasonDetailViewController = SeasonDetailViewController(model: season)
             // Hacer un push
             navigationController?.pushViewController(seasonDetailViewController, animated: true)
-        }
+        }*/
+    }
+}
+
+extension SeasonListViewController: SeasonListViewControllerDelegate {
+    func SeasonListViewController(_ vc: SeasonListViewController, didSelectSeason season: Season) {
+        let seasonDetailViewController = SeasonDetailViewController(model: season)
+        navigationController?.pushViewController(seasonDetailViewController, animated: true)
     }
 }
 

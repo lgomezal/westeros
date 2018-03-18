@@ -33,6 +33,8 @@
 		BABC6B0D202CF1C100E40B48 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC6B0C202CF1C100E40B48 /* House.swift */; };
 		BABC6B0F202CFD8500E40B48 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC6B0E202CFD8500E40B48 /* PersonTest.swift */; };
 		BABC6B11202CFE0000E40B48 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC6B10202CFE0000E40B48 /* Person.swift */; };
+		BADA4FA4205E739F00587478 /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = BADA4FA3205E739F00587478 /* characters.json */; };
+		BADA4FA6205E74B300587478 /* Tyrell.png in Resources */ = {isa = PBXBuildFile; fileRef = BADA4FA5205E74B300587478 /* Tyrell.png */; };
 		BAE61BCB203A05C800832E29 /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE61BC9203A05C800832E29 /* PersonsTableViewController.swift */; };
 		BAE61BCC203A05C800832E29 /* PersonsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAE61BCA203A05C800832E29 /* PersonsTableViewController.xib */; };
 		BAEA29902048810D000E01FE /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA298F2048810D000E01FE /* Enums.swift */; };
@@ -115,6 +117,8 @@
 		BABC6B0C202CF1C100E40B48 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		BABC6B0E202CFD8500E40B48 /* PersonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 		BABC6B10202CFE0000E40B48 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BADA4FA3205E739F00587478 /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
+		BADA4FA5205E74B300587478 /* Tyrell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tyrell.png; sourceTree = "<group>"; };
 		BAE61BC9203A05C800832E29 /* PersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
 		BAE61BCA203A05C800832E29 /* PersonsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonsTableViewController.xib; sourceTree = "<group>"; };
 		BAEA298F2048810D000E01FE /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 				BAFCB332203238740093C2E7 /* codeIsComing.png */,
 				BAFCB333203238740093C2E7 /* lannister.jpg */,
 				BAFCB331203238740093C2E7 /* targaryenSmall.jpg */,
+				BADA4FA5205E74B300587478 /* Tyrell.png */,
 				BAEA2991204883AA000E01FE /* Robb_Stark.png */,
 				BAEA2993204884F3000E01FE /* Arya_Stark.png */,
 				BAEA299520488541000E01FE /* Tyrion_Lannister.png */,
@@ -276,6 +281,7 @@
 				BA16FACE20338172005E7656 /* Repository.swift */,
 				BAED877920408461007A90F7 /* Season.swift */,
 				BAED877D20408AD3007A90F7 /* Episode.swift */,
+				BADA4FA3205E739F00587478 /* characters.json */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				BA106EF420433444009BC584 /* EpisodeListViewController.xib in Resources */,
 				BAEA29AA204889E6000E01FE /* S01.png in Resources */,
 				BAEA29A5204889E6000E01FE /* S03.png in Resources */,
+				BADA4FA4205E739F00587478 /* characters.json in Resources */,
 				BAA03C692041DEBD009C5792 /* SeasonListViewController.xib in Resources */,
 				BAFCB33C20323A990093C2E7 /* HouseDetailViewController.xib in Resources */,
 				BAEA29A9204889E6000E01FE /* S07.png in Resources */,
@@ -432,6 +439,7 @@
 				BAEA29C620488D1F000E01FE /* 1x1.jpg in Resources */,
 				BAFCB335203238740093C2E7 /* codeIsComing.png in Resources */,
 				BA51779C204AB9410023D42A /* home30.png in Resources */,
+				BADA4FA6205E74B300587478 /* Tyrell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

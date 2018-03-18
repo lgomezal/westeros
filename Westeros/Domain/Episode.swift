@@ -28,6 +28,10 @@ extension Episode {
     var proxy: String {
         return "\(season.name) \(emisionDate) \(title)"
     }
+    
+    var proxyDate: Date {
+        return emisionDate
+    }
 }
 
 // MARK: - Hashable
@@ -47,7 +51,7 @@ extension Episode: Equatable {
 // MARK: - Comparable
 extension Episode: Comparable {
     static func <(lhs: Episode, rhs: Episode) -> Bool {
-        return lhs.proxy < rhs.proxy
+        return lhs.proxyDate < rhs.proxyDate
     }
 }
 

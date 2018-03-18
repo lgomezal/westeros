@@ -120,7 +120,7 @@ extension LocalFactory: SeasonFactory {
         //Season 6
         let season6 = Season(name: SeasonName.S6.rawValue, releaseDate: formatter.date(from: "24/04/2016")!, image: UIImage(named: Images.S06.rawValue)!)
         let s06e01 = Episode(title: EpisodeTitle.S06e01.rawValue, emisionDate: formatter.date(from: "24/04/2016")!, season: season6, image: UIImage(named: Images.S6x1.rawValue)!)
-        let s06e02 = Episode(title: EpisodeTitle.S01e01.rawValue, emisionDate: formatter.date(from: "01/05/2016")!, season: season6, image: UIImage(named: Images.S6x2.rawValue)!)
+        let s06e02 = Episode(title: EpisodeTitle.S06e02.rawValue, emisionDate: formatter.date(from: "01/05/2016")!, season: season6, image: UIImage(named: Images.S6x2.rawValue)!)
         
         season6.add(episode: s06e01)
         season6.add(episode: s06e02)

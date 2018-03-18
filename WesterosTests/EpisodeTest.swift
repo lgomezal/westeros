@@ -58,5 +58,9 @@ class EpisodeTest: XCTestCase {
         XCTAssertEqual(episode1.title, "Episodio 1")
     }
     
+    func testHashable() {
+        XCTAssertNotNil(episode1.hashValue)
+    }
+    
     
 }
