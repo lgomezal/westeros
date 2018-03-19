@@ -12,13 +12,19 @@ typealias Words = String
 // Con set nos impide meter duplicados por ese valor
 typealias Members = Set<Person>
 
-final class House {
+final class House: Decodable {
     let name: String
     let sigil: Sigil
     let words: Words
     let wikiURL: URL
-    private var _members: Members
-
+    private var _members: Members = Members()
+    
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case sigil
+        case words
+        case wikiURL = "url"
+    }
     init(name: String, sigil: Sigil, words: Words, url: URL) {
         self.name = name
         self.sigil = sigil
@@ -40,7 +46,7 @@ extension House {
     
     func add(person: Person) {
         // Evitar meter un miembro que no es de tu casa
-        guard person.house == self else {
+        guard person.house.name == self.name else {
             return
         }
         
@@ -95,12 +101,23 @@ extension House: Comparable {
 }
 
 // MARK: - Sigil
-final class Sigil {
+final class Sigil: Decodable {
     let description: String
-    let image: UIImage
+    private let imageName: String
+    var image: UIImage? {
+        get {
+            return UIImage(named: imageName, in: Bundle(for: type(of: self)), compatibleWith: nil)
+        }
+}
     
-    init(image: UIImage, description: String) {
-        self.image = image
+    private enum CodingKeys: String, CodingKey {
+        case description
+        case imageName = "image"
+    }
+    
+    init(imageName: String, description: String) {
+        self.imageName = imageName
         self.description = description
     }
+    
 }

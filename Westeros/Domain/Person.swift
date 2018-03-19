@@ -9,10 +9,15 @@
 import Foundation
 import UIKit
 
-final class Person {
+final class Person: Decodable {
     let name: String
     let house: House
-    let image: UIImage
+    private let imageName: String
+    var image: UIImage? {
+        get {
+            return UIImage(named: imageName, in: Bundle(for: type(of: self)), compatibleWith: nil)
+        }
+    }
     private let _alias: String?
     
     var alias: String {
@@ -26,11 +31,17 @@ final class Person {
         }*/
     }
     
-    init(name: String, alias: String? = nil, house: House, image: UIImage) {
+    private enum CodingKeys: String, CodingKey {
+        case name, house
+        case imageName = "imagePerson"
+        case _alias = "alias"
+    }
+    
+    init(name: String, alias: String? = nil, house: House, image: String) {
         self.name = name
         _alias = alias
         self.house = house
-        self.image = image
+        self.imageName = image
         
         house.add(person: self)
     }

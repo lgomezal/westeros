@@ -16,6 +16,9 @@
 		BA16FACB20337C97005E7656 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16FACA20337C97005E7656 /* UIViewController+Additions.swift */; };
 		BA16FACD2033808E005E7656 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16FACC2033808E005E7656 /* RepositoryTest.swift */; };
 		BA16FACF20338172005E7656 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16FACE20338172005E7656 /* Repository.swift */; };
+		BA48732920603CD200BCE400 /* Bran_Stark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA48732820603CD200BCE400 /* Bran_Stark.jpg */; };
+		BA48732B20603E1200BCE400 /* elperro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA48732A20603E1200BCE400 /* elperro.jpg */; };
+		BA48732D20603E9D00BCE400 /* jonsnow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA48732C20603E9D00BCE400 /* jonsnow.jpg */; };
 		BA51779B204AB9410023D42A /* folder30.png in Resources */ = {isa = PBXBuildFile; fileRef = BA517799204AB9400023D42A /* folder30.png */; };
 		BA51779C204AB9410023D42A /* home30.png in Resources */ = {isa = PBXBuildFile; fileRef = BA51779A204AB9410023D42A /* home30.png */; };
 		BA727C8520362B8D0023AEB2 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA727C8320362B8D0023AEB2 /* WikiViewController.swift */; };
@@ -96,6 +99,9 @@
 		BA16FACA20337C97005E7656 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		BA16FACC2033808E005E7656 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
 		BA16FACE20338172005E7656 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BA48732820603CD200BCE400 /* Bran_Stark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bran_Stark.jpg; sourceTree = "<group>"; };
+		BA48732A20603E1200BCE400 /* elperro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elperro.jpg; sourceTree = "<group>"; };
+		BA48732C20603E9D00BCE400 /* jonsnow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jonsnow.jpg; sourceTree = "<group>"; };
 		BA517799204AB9400023D42A /* folder30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder30.png; sourceTree = "<group>"; };
 		BA51779A204AB9410023D42A /* home30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home30.png; sourceTree = "<group>"; };
 		BA727C8320362B8D0023AEB2 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +252,9 @@
 				BAEA2997204885A7000E01FE /* Jaime_Lannister.png */,
 				BAEA2999204885F0000E01FE /* Cersei_Lannister.png */,
 				BAEA299B2048863E000E01FE /* Daenerys-Targaryen.png */,
+				BA48732820603CD200BCE400 /* Bran_Stark.jpg */,
+				BA48732A20603E1200BCE400 /* elperro.jpg */,
+				BA48732C20603E9D00BCE400 /* jonsnow.jpg */,
 				BAEA29A3204889E6000E01FE /* S01.png */,
 				BAEA299F204889E5000E01FE /* S02.png */,
 				BAEA299E204889E5000E01FE /* S03.png */,
@@ -397,6 +406,7 @@
 			files = (
 				BAEA29BE20488D1F000E01FE /* 3x1.jpg in Resources */,
 				BAEA29BB20488D1F000E01FE /* 5x1.jpg in Resources */,
+				BA48732920603CD200BCE400 /* Bran_Stark.jpg in Resources */,
 				BAEA29BC20488D1F000E01FE /* 4x2.jpg in Resources */,
 				BAEA29A6204889E6000E01FE /* S02.png in Resources */,
 				BABC6AF5202CE4B000E40B48 /* LaunchScreen.storyboard in Resources */,
@@ -428,6 +438,7 @@
 				BAEA29A9204889E6000E01FE /* S07.png in Resources */,
 				BAFCB336203238740093C2E7 /* lannister.jpg in Resources */,
 				BAEA29B920488D1F000E01FE /* 5x2.jpg in Resources */,
+				BA48732B20603E1200BCE400 /* elperro.jpg in Resources */,
 				BAEA29C220488D1F000E01FE /* 6x1.jpg in Resources */,
 				BA106EFC204339BF009BC584 /* PersonDetailViewController.xib in Resources */,
 				BAEA29C320488D1F000E01FE /* 4x1.jpg in Resources */,
@@ -438,6 +449,7 @@
 				BAEA299C2048863E000E01FE /* Daenerys-Targaryen.png in Resources */,
 				BAEA29C620488D1F000E01FE /* 1x1.jpg in Resources */,
 				BAFCB335203238740093C2E7 /* codeIsComing.png in Resources */,
+				BA48732D20603E9D00BCE400 /* jonsnow.jpg in Resources */,
 				BA51779C204AB9410023D42A /* home30.png in Resources */,
 				BADA4FA6205E74B300587478 /* Tyrell.png in Resources */,
 			);

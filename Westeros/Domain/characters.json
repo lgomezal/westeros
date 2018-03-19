@@ -3,6 +3,7 @@
  "id":86,
  "name":"Bran Stark",
  "alias": null,
+ "imagePerson":"Bran_Stark.jpg",
  "house":{
  "id":2,
  "name":"Stark",
@@ -18,6 +19,7 @@
  "id":91,
  "name":"Chiquito Stark",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":2,
  "name":"Stark",
@@ -33,6 +35,7 @@
  "id":78,
  "name":"Ed",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":8,
  "name":"Tyrell",
@@ -48,6 +51,7 @@
  "id":24,
  "name":"El perro",
  "alias": null,
+ "imagePerson":"elperro.jpg",
  "house":{
  "id":6,
  "name":"Lannister",
@@ -63,6 +67,7 @@
  "id":73,
  "name":"Gema",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":6,
  "name":"Lannister",
@@ -78,6 +83,7 @@
  "id":87,
  "name":"Jon Snow",
  "alias": null,
+ "imagePerson":"jonsnow.jpg",
  "house":{
  "id":2,
  "name":"Stark",
@@ -93,6 +99,7 @@
  "id":80,
  "name":"Josefina",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":8,
  "name":"Tyrell",
@@ -108,6 +115,7 @@
  "id":90,
  "name":"Josele3",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":2,
  "name":"Stark",
@@ -123,6 +131,7 @@
  "id":81,
  "name":"Juan",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":8,
  "name":"Tyrell",
@@ -138,6 +147,7 @@
  "id":67,
  "name":"Margery Tyrell",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":8,
  "name":"Tyrell",
@@ -153,6 +163,7 @@
  "id":70,
  "name":"Rob Stark",
  "alias": "The Young Wolf",
+ "imagePerson":"",
  "house":{
  "id":2,
  "name":"Stark",
@@ -168,6 +179,7 @@
  "id":21,
  "name":"Sansa Stark",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":2,
  "name":"Stark",
@@ -183,6 +195,7 @@
  "id":50,
  "name":"Test 26",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":7,
  "name":"Targaryen",
@@ -198,6 +211,7 @@
  "id":51,
  "name":"Test 27",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":7,
  "name":"Targaryen",
@@ -213,6 +227,7 @@
  "id":53,
  "name":"Test 29",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":7,
  "name":"Targaryen",
@@ -228,6 +243,7 @@
  "id":55,
  "name":"Test 30",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":7,
  "name":"Targaryen",
@@ -243,6 +259,7 @@
  "id":58,
  "name":"Test 33",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":7,
  "name":"Targaryen",
@@ -258,6 +275,7 @@
  "id":59,
  "name":"Test 34",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":7,
  "name":"Targaryen",
@@ -273,6 +291,7 @@
  "id":60,
  "name":"Test 35",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":7,
  "name":"Targaryen",
@@ -288,6 +307,7 @@
  "id":61,
  "name":"Test 36",
  "alias": null,
+ "imagePerson":"",
  "house":{
  "id":7,
  "name":"Targaryen",

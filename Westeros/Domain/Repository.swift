@@ -29,7 +29,7 @@ final class LocalFactory: HouseFactory {
     // HOUSES
     var houses: [House] {
         // Houses creation here
-        let starkSigil = Sigil(image: #imageLiteral(resourceName: "codeIsComing.png"), description: SigilDescriptions.starkSigil.rawValue)
+        /*let starkSigil = Sigil(image: #imageLiteral(resourceName: "codeIsComing.png"), description: SigilDescriptions.starkSigil.rawValue)
         let starkHouse = House(name: HouseNames.Stark.rawValue, sigil: starkSigil, words: HouseWords.starkWord.rawValue, url: URL(string: URLs.starkURL.rawValue)!)
         
         let lannisterSigil = Sigil(image: #imageLiteral(resourceName: "lannister.jpg"), description: SigilDescriptions.lannisterSigil.rawValue)
@@ -53,6 +53,9 @@ final class LocalFactory: HouseFactory {
         targaryenHouse.add(persons: daenerys)
         
         return [starkHouse, lannisterHouse, targaryenHouse].sorted()
+        */
+        let houses = remoteHouses()
+        return houses.sorted()
  
     }
     
@@ -140,4 +143,39 @@ extension LocalFactory: SeasonFactory {
         return seasons.filter(filteredBy)
     }
 }
+
+private extension LocalFactory {
+    
+    func remoteHouses() -> [House] {
+        func house(named name: String, in collection: [House]) -> House {
+            return collection.first{ $0.name == name }!
+        }
+        
+        let characters = persons(fromResource: "characters", withExtension: "json")
+        var houses = Set<House>()
+        characters.forEach { houses.insert($0.house) }
+        characters.forEach{
+            let h = house(named: $0.house.name, in: Array(houses))
+            h.add(person: $0)
+        }
+        
+        return Array(houses)
+    }
+    func persons(fromResource resource: String, withExtension ext: String) -> [Person]  {
+        let bundle = Bundle(for: type(of: self))
+        if let file = bundle.url(forResource: resource, withExtension: ext) {
+            do {
+                let data = try Data(contentsOf: file)
+                let jsonDecoder = JSONDecoder()
+                let persons = try! jsonDecoder.decode([Person].self, from: data)
+                
+                return persons
+            } catch {
+                return []
+            }
+        }
+        return []
+    }
+}
+
 
